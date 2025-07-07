@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Portfolio | Ethical Hacker & Security Enthusiast</title>
+    <meta name="description" content="Portfolio of a cybersecurity fresher showcasing skills, projects, and passion for ethical hacking and digital security">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">&lt;CyberSec/&gt;</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#profiles">Profiles</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hire-btn" onclick="scrollToSection('contact')">Hire Me</button>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="matrix-bg"></div>
+        
+        <div class="hero-content">
+            <div class="terminal-intro">
+                <div>guest@cyberworld:~$ whoami</div>
+                <div class="terminal-response">root@security-expert</div>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="cyber-green">Alex</span> Chen
+            </h1>
+            
+            <div class="typing-container">
+                <p id="typing-text" class="typing-text"></p>
+                <span class="cursor">|</span>
+            </div>
+            
+            <p class="hero-description">
+                Passionate about securing digital environments and protecting against cyber threats. 
+                Dedicated to ethical hacking practices and continuous learning in the evolving cybersecurity landscape.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                <button class="btn-outline" onclick="scrollToSection('contact')">Get In Touch</button>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="cyber-green">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-cards">
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-green">&lt;introduction/&gt;</h3>
+                        <p>I'm a cybersecurity enthusiast with a passion for ethical hacking and digital security. My journey began with curiosity about how systems work and evolved into a deep commitment to protecting digital infrastructures.</p>
+                        <p>I believe in the power of ethical hacking to strengthen security postures and am dedicated to continuous learning in this rapidly evolving field.</p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-blue">&lt;mission/&gt;</h3>
+                        <p>To contribute to a safer digital world through ethical hacking practices, continuous skill development, and responsible disclosure of vulnerabilities. I aim to bridge the gap between theoretical knowledge and practical application in cybersecurity.</p>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-green">&lt;values/&gt;</h3>
+                        <div class="values-list">
+                            <div class="value-item"><span>•</span> Ethical and responsible security practices</div>
+                            <div class="value-item"><span>•</span> Continuous learning and skill development</div>
+                            <div class="value-item"><span>•</span> Knowledge sharing and community building</div>
+                            <div class="value-item"><span>•</span> Transparency in vulnerability disclosure</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="profile-image"></div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number cyber-green">2+</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number cyber-blue">15+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number cyber-green">5+</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number cyber-blue">24/7</div>
+                            <div class="stat-label">Learning Mode</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & <span class="cyber-green">Tools</span></h2>
+                <div class="section-line"></div>
+                <p>A comprehensive toolkit built through hands-on learning, practice labs, and real-world applications</p>
+            </div>
+            
+            <div class="skills-section">
+                <h3 class="subsection-title cyber-blue">&lt;technical_skills/&gt;</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4 class="skill-category">Penetration Testing</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Network Scanning</span>
+                            <span class="skill-tag">Vulnerability Assessment</span>
+                            <span class="skill-tag">Web App Testing</span>
+                            <span class="skill-tag">Social Engineering</span>
+                            <span class="skill-tag">Report Writing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h4 class="skill-category">Security Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Nmap</span>
+                            <span class="skill-tag">Burp Suite</span>
+                            <span class="skill-tag">Metasploit</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">OWASP ZAP</span>
+                            <span class="skill-tag">Nessus</span>
+                            <span class="skill-tag">John the Ripper</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h4 class="skill-category">Operating Systems</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kali Linux</span>
+                            <span class="skill-tag">Ubuntu</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">Parrot OS</span>
+                            <span class="skill-tag">BackBox</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h4 class="skill-category">Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash Scripting</span>
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h4 class="skill-category">Networking</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">DNS</span>
+                            <span class="skill-tag">HTTP/HTTPS</span>
+                            <span class="skill-tag">VPN</span>
+                            <span class="skill-tag">Firewall Config</span>
+                            <span class="skill-tag">Network Protocols</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h4 class="skill-category">Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OWASP Top 10</span>
+                            <span class="skill-tag">NIST Framework</span>
+                            <span class="skill-tag">ISO 27001</span>
+                            <span class="skill-tag">MITRE ATT&CK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="soft-skills-section">
+                <h3 class="subsection-title cyber-blue">&lt;soft_skills/&gt;</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill">Critical Thinking</div>
+                    <div class="soft-skill">Problem Solving</div>
+                    <div class="soft-skill">Attention to Detail</div>
+                    <div class="soft-skill">Communication</div>
+                    <div class="soft-skill">Team Collaboration</div>
+                    <div class="soft-skill">Time Management</div>
+                    <div class="soft-skill">Adaptability</div>
+                    <div class="soft-skill">Continuous Learning</div>
+                </div>
+            </div>
+            
+            <div class="terminal-showcase">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="terminal-title">terminal@cybersec:~/skills$</span>
+                </div>
+                <div class="terminal-content">
+                    <div><span class="user">alex@cybersec</span>:~$ cat current_focus.txt</div>
+                    <div>• Penetration Testing Methodologies</div>
+                    <div>• Cloud Security (AWS, Azure)</div>
+                    <div>• Incident Response & Forensics</div>
+                    <div>• Red Team Operations</div>
+                    <div><span class="user">alex@cybersec</span>:~$ echo "Always learning, always improving"</div>
+                    <div class="output">Always learning, always improving</div>
+                    <div class="current-line">
+                        <span class="user">alex@cybersec</span>:~$ <span class="cursor-terminal">|</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="cyber-green">Projects</span></h2>
+                <div class="section-line"></div>
+                <p>Hands-on projects demonstrating practical cybersecurity skills and problem-solving abilities</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Network Security</span>
+                        <h3 class="project-title">Network Vulnerability Scanner</h3>
+                    </div>
+                    <p class="project-description">Developed a Python-based network scanner that identifies open ports, services, and potential vulnerabilities across network ranges.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Manual network reconnaissance is time-consuming and error-prone</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Nmap</span>
+                                <span class="tool-tag">Socket Programming</span>
+                                <span class="tool-tag">Threading</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Automated scanning reduced assessment time by 70%</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Web Security</span>
+                        <h3 class="project-title">Web Application Security Testing Lab</h3>
+                    </div>
+                    <p class="project-description">Created a vulnerable web application environment for practicing common security testing techniques and OWASP Top 10 vulnerabilities.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Need for safe, legal environment to practice web app testing</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">PHP</span>
+                                <span class="tool-tag">MySQL</span>
+                                <span class="tool-tag">Docker</span>
+                                <span class="tool-tag">Burp Suite</span>
+                                <span class="tool-tag">OWASP ZAP</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Successfully identified and documented 15+ vulnerability types</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                        <button class="btn-project-demo">Demo</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">AI Security</span>
+                        <h3 class="project-title">Phishing Email Detection System</h3>
+                    </div>
+                    <p class="project-description">Built a machine learning model to classify and detect phishing emails using natural language processing and email header analysis.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Increasing sophistication of phishing attacks targeting organizations</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Scikit-learn</span>
+                                <span class="tool-tag">NLTK</span>
+                                <span class="tool-tag">Pandas</span>
+                                <span class="tool-tag">Email APIs</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Achieved 94% accuracy in phishing email detection</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Security Auditing</span>
+                        <h3 class="project-title">Password Security Audit Tool</h3>
+                    </div>
+                    <p class="project-description">Developed a comprehensive password policy auditing tool that analyzes password strength and generates security recommendations.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Weak password policies leading to security breaches</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Hashlib</span>
+                                <span class="tool-tag">Regular Expressions</span>
+                                <span class="tool-tag">CSV Processing</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Helped improve password policies for 3 local businesses</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Incident Response</span>
+                        <h3 class="project-title">Incident Response Playbook</h3>
+                    </div>
+                    <p class="project-description">Created a comprehensive incident response framework with automated notification systems and evidence collection procedures.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Lack of structured incident response procedures</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Documentation</span>
+                                <span class="tool-tag">Automation Scripts</span>
+                                <span class="tool-tag">Slack API</span>
+                                <span class="tool-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Reduced incident response time by 50%</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">Education</span>
+                        <h3 class="project-title">CTF Challenge Platform</h3>
+                    </div>
+                    <p class="project-description">Built a capture-the-flag platform with various cybersecurity challenges for educational purposes and skill development.</p>
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Problem:</h4>
+                            <p>Limited access to structured cybersecurity challenges</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-green">Tools Used:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Node.js</span>
+                                <span class="tool-tag">React</span>
+                                <span class="tool-tag">Docker</span>
+                                <span class="tool-tag">PostgreSQL</span>
+                                <span class="tool-tag">Redis</span>
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4 class="detail-title cyber-blue">Outcome:</h4>
+                            <p>Platform used by 200+ security enthusiasts</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="btn-project-github">⚡ GitHub</button>
+                        <button class="btn-project-demo">Demo</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="terminal-showcase">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="terminal-title">terminal@projects:~/portfolio$</span>
+                </div>
+                <div class="terminal-content">
+                    <div><span class="user">alex@projects</span>:~$ git log --oneline</div>
+                    <div>• 6 major projects completed</div>
+                    <div>• 15+ vulnerabilities discovered and documented</div>
+                    <div>• 200+ users engaged with educational content</div>
+                    <div>• 94% success rate in detection systems</div>
+                    <div><span class="user">alex@projects</span>:~$ echo "Building secure digital futures"</div>
+                    <div class="output">Building secure digital futures</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="cyber-green">Touch</span></h2>
+                <div class="section-line"></div>
+                <p>Ready to discuss cybersecurity opportunities, collaborate on projects, or just connect with a fellow security enthusiast</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-green">&lt;send_message/&gt;</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell me about your project, opportunity, or just say hello..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary form-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <span class="spinner"></span>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info-container">
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-blue">&lt;contact_info/&gt;</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">alex.chen@cybersec.dev</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">San Francisco, CA</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">⏱️</span>
+                                <div>
+                                    <div class="contact-label">Response Time</div>
+                                    <div class="contact-value">Within 24 hours</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">✅</span>
+                                <div>
+                                    <div class="contact-label">Availability</div>
+                                    <div class="contact-value">Open to opportunities</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h3 class="card-title cyber-green">&lt;quick_actions/&gt;</h3>
+                        <div class="quick-actions">
+                            <button class="btn-outline" onclick="window.open('mailto:alex.chen@cybersec.dev')">📧 Send Email Directly</button>
+                            <button class="btn-outline btn-blue">📅 Schedule a Call</button>
+                            <button class="btn-outline btn-purple">📄 Download Resume</button>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-showcase">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="terminal-title">terminal@contact:~/availability$</span>
+                        </div>
+                        <div class="terminal-content">
+                            <div><span class="user">alex@contact</span>:~$ cat status.txt</div>
+                            <div>🟢 Available for new opportunities</div>
+                            <div>🔍 Open to cybersecurity roles</div>
+                            <div>💼 Interested in penetration testing positions</div>
+                            <div>🤝 Always up for networking and mentorship</div>
+                            <div><span class="user">alex@contact</span>:~$ echo "Let's build something secure together!"</div>
+                            <div class="output">Let's build something secure together!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">&lt;CyberSec/&gt;</div>
+                    <p>Ethical hacker and cybersecurity enthusiast dedicated to building secure digital environments.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">⚡ GitHub</a>
+                        <a href="#" class="social-link">💼 LinkedIn</a>
+                        <a href="#" class="social-link">🔴 TryHackMe</a>
+                        <a href="#" class="social-link">🟢 Hack The Box</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#profiles">Profiles</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <div>📧 alex.chen@cybersec.dev</div>
+                        <div>📍 San Francisco, CA</div>
+                        <div>⏱️ Response within 24 hours</div>
+                    </div>
+                    <button class="btn-outline" onclick="window.open('mailto:alex.chen@cybersec.dev')">Get In Touch</button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-terminal">
+                    <span class="cyber-green">alex@cybersec</span>:~$ echo "© 2024 Alex Chen. All rights reserved."
+                </div>
+                <div class="footer-meta">
+                    <span>Built with ❤️ and secure coding practices</span>
+                    <button class="back-to-top" onclick="scrollToTop()">⬆️ Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
